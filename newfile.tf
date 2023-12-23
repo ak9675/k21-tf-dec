@@ -6,7 +6,8 @@ resource "azurerm_resource_group" "myrg" {
   location   = "eastus"
   name       = var.rg_name
   tags       = {
-    env = "test"
+    env = "test",
+    project = "ABC"
   }
 }
 
