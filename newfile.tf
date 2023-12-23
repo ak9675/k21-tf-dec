@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "myrg" {
   tags       = {
     env = "test",
     project = "ABC"
-edit = "github
+edit = "github"
   }
 }
 
