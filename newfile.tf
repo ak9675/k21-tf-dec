@@ -12,6 +12,13 @@ edit = "github"
   }
 }
 
+
+resource "azurerm_public_ip" "myip" {
+name = "ip-cloud"
+resource_group_name = azurerm_resource_group.myrg.name
+location =  azurerm_resource_group.myrg.location
+allocation_method = "Static"
+}
 variable "rg_name" {
   description = "Enter name for rg as per your project "
 }
